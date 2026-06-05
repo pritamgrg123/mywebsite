@@ -1,0 +1,46 @@
+%%html
+
+<div style="background-color: #dadde1; width: 1300px; text-align: center;">
+  <h1 style="color: #1877f2; letter-spacing: -1px; font-size: 50px; margin-top: 40px; padding: 40px; font-weight: bold; font-family: Chiller; text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)">☘ Blue Clover ☘</h1>
+  <div style="background-color: white; text-align: left; width:550px; padding: 50px; border-radius: 20px; display: inline-block; margin-top: -35px; margin-bottom: 40px; font-family: Arial; box-sizing: border-box; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2)">
+    <h1 style="color: black; margin-top: -30px; font-size: 20px; margin-left: -17px">Log into Blue Clover</h1>
+    <input type="text" id="userName" placeholder="Enter your full name [e.g. Pritam Gurung]"
+           style="background-color: white; font-size: 17px; width: 500px; margin-top: 15px; margin-left: -20px; padding: 20px; border: 2px solid gray; color: black; border-radius: 10px; box-sizing: border-box;">
+    <input type="number" id="userAge" placeholder="Enter your age [e.g. 15]"
+           style="background-color: white; font-size: 17px; width: 500px; margin-top: 15px; margin-left: -20px; padding: 20px; border: 2px solid gray; color: black; border-radius: 10px; box-sizing: border-box;">
+    <input type="password" id="userPass" placeholder="Password"
+           style="background-color: white; font-size: 17px; width: 500px; margin-top: 15px; margin-left: -20px; padding: 20px; border: 2px solid gray; color: black; border-radius: 10px; box-sizing: border-box;">
+    <button id="loginBtn" style="background: linear-gradient(to right, Blue, #1877f2); width: 500px; margin-left: -20px; padding: 15px; margin-top: 20px; border: none; border-radius: 50px; font-size: 20px; font-weight: bold; font-family: Arial; color: white; cursor: pointer;">Log In</button>
+
+    <script>
+      document.getElementById("loginBtn").onclick = function() {
+
+        var name = document.getElementById("userName").value;
+        var pass = document.getElementById("userPass").value;
+        var age = document.getElementById("userAge").value;
+
+        if (name == "Pritam Gurung" && pass == "Password 123" && age == 15) {
+          window.open('https://www.google.com/', '_blank');
+        } else {
+          alert("Incorrect name or age or password❎");
+        }
+      };
+    </script>
+
+    <div style="display: flex; align-items: center; text-align: center; margin: 20px 0; width: 450px;">
+          <hr style="flex-grow: 1; border: 0; border-top: 1px solid #dadde1;">
+
+          <span style="color: gray; padding: 0 15px; font-size: 17px; font-weight: bold;">or</span>
+
+          <hr style="flex-grow: 1; border: 0; border-top: 1px solid #dadde1;">
+    </div>
+
+    <button style="background-color: white; font-size: 20px; font-weight: bold; padding: 15px; width: 500px; margin-left: -20px; border-radius: 50px; border: 2px solid gray; cursor: pointer;">✉ Continue with Email</button>
+    <img src="facebook.png" style="width: 30px; margin-top: 25px; margin-bottom: -25px; margin-left: 80px;">
+    <button style="background: none; font-size: 20px; font-weight: bold; padding: 15px; width: 500px; margin-left: -20px; border-radius: 50px; border: 2px solid gray; margin-top: -22px; cursor: pointer;">Continue with Facebook</button>
+    <p style="font-size: 12px; color: gray; text-align: center;">This two button is not working. It is for show peace only.</p>
+  </div>
+</div>
+'''
+
+display.display(display.HTML(html_code))
